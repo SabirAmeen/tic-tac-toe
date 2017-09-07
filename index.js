@@ -1,5 +1,6 @@
 var express = require('express'),
-    path = require('path');
+    path = require('path'),
+    http = require('http');
 var app = express();
 var server = http.createServer(app);
 
