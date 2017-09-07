@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Main from './containers/main.jsx';
+import { Router, Route } from 'react-router'
+import Login from './containers/login.jsx';
 
 ReactDom.render(
-		<Main/>,
+		<Router>
+	      <Route path="/" component={Login} />
+	    </Router>,
 	document.getElementById('app'));
